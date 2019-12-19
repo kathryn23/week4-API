@@ -1,4 +1,3 @@
-"use strict"
 const NewsAPI = require('newsapi');
 const newsapi = NewsAPI('7182db9e1ffc4c6f8fdea0357887f9a4');//API key
 
@@ -54,7 +53,7 @@ else{
     console.log('Fetcch error', err);
 });
 
-/* To query /v2/everything, You must include at least one q, source, or domain
+//To query /v2/everything, You must include at least one q, source, or domain
 newsapi.v2.everything({ //using calbacks
   q       :[phrase],
   sources :[chosesource],
@@ -76,5 +75,5 @@ else {
     console.log('\x1b[31m', "No such phrase, check your spelling.");
 }}
 });
-module.exports = newsapi; */
+module.exports = newsapi; 
 
